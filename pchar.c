@@ -22,7 +22,7 @@ void f_pchar(stack_t **head, unsigned int counter)
 	}
 	if (h->n > 127 || h->n < 0)
 	{
-		/* Print an error message for attempting to use pchar with a value out of range */
+		/* Print an error message to use pchar with a value out of range */
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", counter);
 		fclose(bus.file);
 		free(bus.content);
